@@ -1,2 +1,3 @@
-# Assignment
-This is a DevOps assignment 
+# DevOps assignment 
+Hardware configuration - Apple M1 
+Prerequisties - homebrew, docker-desktop, kubectl, awscli
