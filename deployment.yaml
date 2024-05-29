@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agulati
+spec:
+  selector:
+    matchLabels:
+      app: agulati
+  template:
+    metadata:
+      labels:
+        app: agulati
+    spec:
+      containers:
+      - name: agulati
+        image: nginx
+        # resources:
+        #   limits:
+        #     memory: "128Mi"
+        #     cpu: "500m"
+        # ports:
+        # - containerPort: <Port>
+        env:
+        - name: "PORT"
+          value: "80"
